@@ -96,7 +96,7 @@ if($query->rowCount() > 0)
 {
 foreach($results as $result)
 {
-  echo $result->Vimage2;
+  echo $result->Vimage1;
 $_SESSION['brndid']=$result->bid;
 ?>
 

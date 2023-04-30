@@ -87,7 +87,7 @@ $error="Something went wrong. Please try again";
 </head>
 <body>
 
-<<!-- Start Switcher -->
+<!-- Start Switcher -->
 <?php include('includes/colorswitcher.php');?>
 <!-- /Switcher -->
 
@@ -148,7 +148,21 @@ $error="Something went wrong. Please try again";
       <div class="col-md-6">
         <h3>Contact Info</h3>
         <div class="contact_detail">
-              <?php
+        <ul>
+            <li>
+              <div class="icon_wrap"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+              <div class="contact_info_m">Bike Book PVT LTD. Kochi ,Kerala</div>
+            </li>
+            <li>
+              <div class="icon_wrap"><i class="fa fa-phone" aria-hidden="true"></i></div>
+              <div class="contact_info_m"><a href="tel:+91 9061613233">+91 9061613233</a></div>
+            </li>
+            <li>
+              <div class="icon_wrap"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+              <div class="contact_info_m"><a href="mailto:jabirahmedz111@gmail.com">jabirahmedz111@gmail.com</a></div>
+            </li>
+          </ul>
+              <!-- <?php
 $pagetype=$_GET['type'];
 $sql = "SELECT Address,EmailId,ContactNo from tblcontactusinfo";
 $query = $dbh -> prepare($sql);
@@ -174,7 +188,8 @@ foreach($results as $result)
               <div class="contact_info_m"><a href="mailto:codeprojectsorg@gmail.com"><?php   echo htmlentities($result->ContactNo); ?></a></div>
             </li>
           </ul>
-        <?php }} ?>
+        <?php }} ?> -->
+        
         </div>
       </div>
     </div>
