@@ -117,15 +117,7 @@ foreach($results as $result)
       <div class="col-md-9 col-md-push-3">
         <div class="result-sorting-wrapper">
           <div class="sorting-count">
-<?php
-//Query for Listing count
-$sql = "SELECT id from tblvehicles";
-$query = $dbh -> prepare($sql);
-$query->bindParam(':vhid',$vhid, PDO::PARAM_STR);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=$query->rowCount();
-?>
+
 <p><span><?php echo htmlentities($cnt);?> Listings</span></p>
 </div>
 </div>
